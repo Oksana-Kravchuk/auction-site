@@ -1,0 +1,32 @@
+@@include('template/head.html')
+@@include('template/header.html')
+<div class="page__row">
+	<div class="container">
+		<div class="signup">
+			<h1 class="signup__title">Регистрация</h1>
+			<div class="signup__body">
+				<form action="#" class="signup__form" method="post">
+					<div class="form-item">
+						<div class="form-item__title">Ваше имя:</div>
+						<input type="text" class="form-item__input" pattern="^(\s*[A-Za-zА-Яа-яіїёєІЇЁЄ\d\._-]{2,50})(\s+[A-Za-zА-Яа-яіїёєІЇЁЄ\d\._-]{2,50})?\s*$" required placeholder = "Например, Василий">
+					</div>
+					<div class="form-item">
+						<div class="form-item__title">Эл. почта:</div>
+						<input type="text" class="form-item__input" pattern="^[a-z0-9.+]+@[a-z]+.[a-z]{2,3}$" required placeholder = "example@example.com">
+					</div>
+					<div class="form-item">
+						<div class="form-item__title">Пароль:</div>
+						<input type="password" class="form-item__input" pattern="(?=^.{6,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required placeholder = "******" maxlength="15">
+						<p class="form-item__hint">Пароль должен быть не менее 6 символов, содержать цифры и заглавные буквы и не должен совпадать с именем и эл.почтой</p>
+					</div>
+					<div class="form__submit">
+						<button class="form-btn" type="submit">
+							Зарегестрироваться
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+@@include('template/footer.html')

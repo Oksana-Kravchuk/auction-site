@@ -1,0 +1,287 @@
+$main-color: #009fff
+
+.breadcrumbs
+	margin-top: 1.4rem
+	&__list
+		margin: 0
+		padding: 0
+		display: flex
+	&__item
+		display: block
+		list-style: none
+	&-link
+		text-decoration: none
+		color: $main-color
+		cursor: pointer
+		&:after
+			content: "\2192"
+			padding: 6px
+			color: #000	
+		&:hover
+			color: #000
+
+.catalog
+	&-title
+		margin: 1.9rem 0
+		font-weight: normal
+		+rfs(30px)
+	&__body
+		display: flex
+	&-filter
+		width: 15.9rem
+		margin-bottom: 20%
+	&-filter__title
+		font-weight: bold
+		background-color: #ecf2f8
+		padding: 10px
+		position: relative
+		cursor: pointer
+		margin: 0
+		&:after
+			content: '\2212'
+			+rfs(20px)
+			position: absolute
+			right: 10px
+			top: 5px
+
+	&-filter__block
+		padding: 10px 0 10px 5px
+		transition: height 0.3s ease-out
+
+.catalog-filter__block_hide
+	height: 0
+	transition: all 0.3s
+	overflow: hidden
+	padding: 0
+
+.show:after
+	content: "\002B"
+
+.filter
+	&-price__min,
+	&-price__max
+		width: 3.2rem
+		height: 1.25rem
+		border-radius: 3px
+		margin: 5px
+		border: 1px solid #009fff
+		padding-left: 5px
+	&-price__btn
+		padding: 7px
+		border: none
+		background: #3a4762
+		color: #fff
+		cursor: pointer
+		border-radius: 4px
+	&-price__currency
+		padding-right: 5px
+	&__item
+		display: block
+		margin-bottom: 8px
+	&-list
+		margin: 0
+		padding: 0
+		list-style: none
+	&-checkbox
+		display: none
+	&-custom-checkbox
+		display: inline-block
+		position: relative
+		vertical-align: middle
+		width: 1rem
+		height: 1rem
+		border: 1px solid #009fff
+		border-radius: 2px
+		cursor: pointer
+		margin-right: 5px
+	&-label
+		cursor: pointer
+
+
+.filter-checkbox:checked + .filter-custom-checkbox:before
+	content: ""
+	display: block
+	position: absolute
+	top: 2px
+	right: 2px
+	bottom: 2px
+	left: 2px
+	background: #009fff
+	border-radius: 2px
+
+.catalog-content-block
+	width: 72%
+
+.catalog-sort	
+	display: flex
+	align-items: center
+	margin: 0 20px
+	padding-bottom: 5px
+	border-bottom: 1px solid #eaeaea
+	&__title
+		margin-right: 10px
+	&__list
+		padding: 3px
+		margin-bottom: 8px
+		border: 1px solid #009fff
+
+
+.catalog-products
+	display: flex
+	flex-direction: row
+	flex-wrap: wrap
+	margin-bottom: 10%
+
+.product
+	&-cell
+		padding: 1.8rem 1.25rem 0.6rem 1.25rem
+		width: 26%
+		position: relative
+		&:hover
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		&__title
+			margin-top: 10px
+			margin-bottom: 8px
+			height: 2.2rem
+			line-height: 1.2
+			color: #3d7ee5
+			text-overflow: ellipsis
+			overflow: hidden
+			font-weight: normal
+			&:hover
+				text-decoration: underline
+				cursor: pointer
+		&__price
+			display: flex
+			align-items: center
+			justify-content: space-between
+			height: 2.5rem
+			font-size: 1rem
+		&__time
+			color: red
+			margin-top: 10px
+			+rfs(14px)
+		&__picture
+			display: flex
+			justify-content: center
+		&__btn
+			display: flex
+			justify-content: space-between
+			margin: 10px 0
+			color: #fff
+	&-btn-buy
+			background: #3d7ee5
+			width: 40%
+			cursor: pointer
+			display: flex
+			align-items: center
+			justify-content: center
+	&-btn-bid
+		background: #3a4762
+		cursor: pointer
+		width: 59%
+
+.product-btn-title
+	padding: 0 5px
+	text-align: center
+
+
+.product-price
+	padding: 4px 10px
+	background: #f5ab3c
+	border-radius: 3px
+	color: #fff
+	display: flex
+	flex-wrap: nowrap
+	&::after
+		content: 'грн'
+		display: inline-block
+		padding-left: 5px
+
+.product-img
+	height: 200px
+
+.price-title
+	+rfs(15px)
+
+.bid-popup
+	z-index: 10
+	width: 25rem
+	background: #fff
+	padding: 20px 30px
+	margin: 5% auto
+	box-shadow: 0 0 30px 0 rgba(30,30,30,.6)
+	border-radius: 8px
+
+.bid-block
+	display: none
+
+.bid-popup
+	&__close
+		display: flex
+		justify-content: flex-end
+	&__title
+		text-align: center
+		+rfs(20px)
+		font-weight: bold
+		margin-bottom: 1.6rem
+
+.bid-info
+		display: flex
+		align-items: center
+		&__img
+			margin-right: 1.25rem
+			width: 13%
+		&__price
+			margin-left: 10px
+
+.make-bid
+	display: flex
+	align-items: flex-end
+	justify-content: space-between
+	margin: 1.8rem 0
+
+.bid-current
+	margin-right: 1.2rem
+	&__price
+		+rfs(24px)
+		color: #ff6600
+		font-weight: bold
+		&::after
+			content: "грн"
+			padding-left: 5px
+			+rfs(18px)
+
+.bid-offer__title,
+.bid-current__title
+	margin-top: 0
+	margin-bottom: 5px
+	color: #b7b7b7
+	+rfs(12px)
+
+.bid-offer
+	margin-right: 1.25rem
+	&__price
+		width: 5.6rem
+		text-align: center
+		padding: 7px 0
+		border: 1px solid #b7b7b7
+		border-radius: 0.5rem
+
+.make-bid-btn
+	width: 35%
+	padding: 9px 0
+	border-radius: 8px
+	+rfs(15px)
+	background: #65c000
+	color: #fff
+	border: none
+	cursor: pointer
+
+.bid-popup__buttons
+	border-top: 1px solid #eaeaea
+
+.btn-continue_size
+		width: 45%
+		margin-top: 10px
+		+rfs(17px)

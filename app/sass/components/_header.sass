@@ -1,0 +1,332 @@
+$main-color: #009fff
+
+html 
+	font-size: 100%
+
+.page
+	padding: 0
+	margin: 0
+	+rfs(15px)
+	font-family: Arial, Roboto, Helvetica, sans-serif
+	color: #34495e
+	position: relative
+	display: flex
+	flex-direction: column
+
+.cart-popup
+	z-index: 10
+	width: 45%
+	background: #fff
+	padding: 1.8rem 2.5rem
+	margin: 5% auto
+	box-shadow: 0 0 30px 0 rgba(30,30,30,.6)
+	border-radius: 0.5rem
+	&-title
+		+rfs(24px)
+		margin-top: 0
+		margin-bottom: 20px
+		text-align: center
+		font-weight: bold
+	&__close
+		display: flex
+		justify-content: flex-end
+	&__footer
+		border-top: 1px solid #eaeaea
+		display: flex
+		justify-content: flex-end
+		margin-bottom: 1.8rem
+	&__buttons
+		display: flex
+		justify-content: space-between
+
+.cart-total
+	display: flex
+	align-items: center
+	margin-top: 1.3rem
+
+.cart-total-title
+	margin: 0
+	padding-right: 1.25rem
+	+rfs(20px)
+
+.cart-total-sum
+	+rfs(28px)
+	font-weight: bold
+	&:after
+		content: " грн"
+		font-weight: normal
+
+.cart-sum
+	padding-right: 5px
+
+.btn-continue
+	height: 2.5rem
+	width: 12.5rem
+	background: #f5f5f5
+	color: #0156a9
+	border: none
+	+rfs(18px)
+	cursor: pointer
+	border-radius: 0.3rem
+	margin-right: 1.25rem
+
+.btn-payment
+	height: 2.5rem
+	width: 12.5rem
+	background: #65c000
+	color: #fff
+	border: none
+	+rfs(18px)
+	cursor: pointer
+	border-radius: 0.3rem
+
+.close-icon
+	height: 1.8rem
+
+.cart-info
+	display: flex
+	align-items: center
+	margin-bottom: 3rem
+	justify-content: space-between
+	&__img
+		height: 5.8rem
+		margin-right: 1.25rem
+	&__title
+		margin-right: 1rem
+		width: 12rem
+	&__price
+		margin-left: 15px
+	&__delete
+		width: 1.5rem
+		height: 1.5rem
+		color: #fff
+		border: none
+		background-color: #bac2c9
+		padding: 3px 5px
+		margin-right: 10px
+		border-radius: 50%
+		cursor: pointer
+	&__amount
+		display: flex
+		flex-wrap: nowrap
+
+	.cart-amount
+		width: 1.8rem
+		height: 1.25rem
+		text-align: center
+		margin: 0 5px
+		+rfs(18px)
+
+.cart-amount-minus,
+.cart-amount-plus
+	font-size: 18px
+	background: #fff
+	border: none
+	cursor: pointer
+	&:focus
+		outline: none
+
+.container 
+	max-width: 1100px
+	margin: 0 auto
+
+.header-top-cell
+		display: flex
+		height: 2.5rem
+		justify-content: space-between
+		align-items: center
+
+%link-shared
+	text-decoration: none
+	color: #fff
+
+%list-shared
+	margin: 0
+	padding: 0
+
+.header
+	&__top
+		background: $main-color
+	&__contact
+		display: flex
+	&-phone
+		display: flex
+		position: relative
+	&-phone__button
+		border: none
+		background: $main-color
+	&-nav
+		&__list
+			list-style: none
+			@extend %list-shared
+			display: flex
+			align-items: center
+		&__link
+			@extend %link-shared
+			&:hover
+				text-decoration: underline
+		&__item
+			display: block
+			padding: 0 10px
+			border-right: 1px solid #fff
+			cursor: pointer
+			&:last-child
+				border-right: none
+			
+.phone-number
+	border-bottom: 2px dotted #000
+
+.page__cart
+	display: none
+
+.overlay-modal
+	position: fixed
+	z-index: 10
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.5)
+	overflow: auto
+	left: 0
+	top: 0
+
+.header-bottom-cell
+	display: flex
+	height: 6rem
+	justify-content: space-between
+	align-items: flex-end
+
+.header-logo
+	margin-bottom: 1.2rem
+	margin-right: 1.8rem
+
+.logo
+	display: block
+
+.logo__picture
+	max-width: 100%
+
+.search-form
+	display: flex
+	margin-bottom: 1.2rem
+	position: relative
+	&__inner
+		width: 31rem
+		height: 2.8rem
+		padding-left: 10px
+		border: 1px solid #009fff
+		box-sizing: border-box
+		&:focus
+			outline: none
+	&__button
+		width: 7rem
+		height: 2.8rem
+		cursor: pointer
+		background: $main-color
+		border: none
+		color: #fff
+		+rfs(17px)
+		border-radius: 0 4px 4px 0
+
+.search-result
+	position: absolute
+	width: 100%
+	max-width: 31rem
+	cursor: pointer
+	background: #fff
+	z-index: 10
+	top: 2.8rem
+	left: 0
+	border-right: 1px solid #eaeaea
+	border-left: 1px solid #eaeaea
+	box-sizing: border-box
+
+.search-result__list
+	padding: 6px 0 6px 4px
+	border-bottom: 1px solid #eaeaea
+	&:hover
+		background: #fafae0
+
+.header-cart
+	position: relative
+
+.count-goods
+	position: absolute
+	color: #fff
+	font-weight: bold
+	top: 33px
+	right: 3px
+	+rfs(18px)
+	padding: 2px 6px
+	background: red
+	border-radius: 50%
+	z-index: 2
+	
+.menu-wrapper
+	background: $main-color
+
+.main-menu
+	&__list
+		@extend %list-shared
+		display: flex
+		justify-content: flex-start
+		list-style: none
+	&__item
+		display: block
+		position: relative
+		transition: all 0.5s ease
+		padding: 0.75rem
+		cursor: pointer
+		margin-right: 20px
+
+
+.main-menu-link
+	text-decoration: none
+	text-transform: uppercase
+	color: #fff
+	+rfs(16px)
+
+.hidden-menu
+	position: absolute
+	z-index: 7
+	top: 2.625rem
+	left: 0
+	width: 140px
+	background: #282828
+	display: none
+	&__list 
+		@extend %list-shared
+		list-style: none
+	&__item
+		display: block
+		padding: 5px
+
+.menu-link
+	@extend %link-shared
+	&:hover 
+		text-decoration: underline
+
+.main-menu__item
+	&:hover
+		background: #282828
+		& > .main-menu-link
+			color: #fff
+		& > .hidden-menu
+			display: block
+
+.fixed-line
+	position: fixed
+	top: 0
+	z-index: 1
+	width: 100%
+	overflow: hidden
+
+.nav-open
+	display: none
+	margin-bottom: 1.2rem
+	margin-right: 1rem
+	cursor: pointer
+	&__item
+		width: 35px
+		height: 5px
+		background-color: #000
+		margin: 6px 0

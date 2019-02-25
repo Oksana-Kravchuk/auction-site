@@ -1,0 +1,49 @@
+$main-color: #009fff
+
+.signup
+	margin-bottom: 10%
+	&__form
+		width: 18rem
+	&__title
+		+rfs(34px)
+		font-weight: normal
+		margin-top: 2.5rem
+		margin-bottom: 10px
+		text-align: center
+
+	&__body
+		display: flex
+		justify-content: center
+
+.form-item
+		margin-top: 1.25rem
+		&__title
+			margin-bottom: 6px
+		&__input
+			padding: 10px 5px
+			border: 1px solid #d0d8db
+			box-sizing: border-box
+			border-radius: 6px
+			outline: none
+			width: 100%
+			&:valid
+				border: 1px solid green
+
+		&__hint
+			+rfs(13px)
+			margin: 0
+			padding-top: 5px
+
+
+.form-btn
+	background: $main-color
+	width: 100%
+	margin-top: 16px
+	height: 2.5rem
+	border: none
+	+rfs(16px)
+	border-radius: 5px
+	color: #fff
+	cursor: pointer
+
+

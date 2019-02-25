@@ -1,0 +1,67 @@
+@@include('template/head.html')
+@@include('template/header.html')
+<div class="page__row">
+	<div class="container">
+		<div class ="offer">
+			<div class="offer__header">
+				<h1 class="offer-main-title">Новый лот</h1>
+			</div>
+			<div class="offer__body">
+				<form action="#" method="post" class="offer-form">
+					<div class="offer-form__row">
+						<p class="offer-form__title">Название</p>
+						<input type="text" class="offer-form__inner" required placeholder = "Например, смартфон Samsung Galaxy J4">
+					</div>
+					<div class="offer-form__row">
+						<p class="offer-form__title">Фотографии</p>
+						<label for="file" class="img-load__btn">Загрузить файл</label>
+						<input type="file" class="img-load__file" required multiple id="file">
+					</div>
+					<div class="img-preview"></div>
+					<div class="offer-form__row">
+						<p class="offer-form__title">Количество</p>
+						<input type="number" class="offer-form__inner" required min="1" value = "1">
+					</div>
+					<div class="offer-form__row">
+						<p class="offer-form__title">Начальная ставка</p>
+						<input type="number" class="offer-form__inner" required min="1" placeholder = "Например, 100 грн">
+					</div>
+					<div class="offer-form__row">
+						<p class="offer-form__title">Длительность торгов</p>
+						<select name="duration" class="offer-form__inner">
+							<option value="3" class="offer-select-item" selected>3 дн.</option>
+							<option value="5" class="offer-select-item">5 дн.</option>
+							<option value="7" class="offer-select-item">7 дн.</option>
+							<option value="10" class="offer-select-item">10 дн.</option>
+							<option value="14" class="offer-select-item">14 дн.</option>
+						</select>
+					</div>
+					<div class="offer-form__row">
+						<p class="offer-form__title">Начало торгов</p>
+						<input type="date" class="offer-form__inner" value="2018-12-07" min="2018-12-07" max="2018-12-21" required>
+					</div>
+					<div class="offer-form__row">
+						<p class="offer-form__title">Описание</p>
+						<textarea name="describe" cols="35" rows="10" class="offer-form__inner" required></textarea>
+					</div>
+					<div class="offer-form__submit">
+						<button class="form-btn form-btn_size" type="submit">Отправить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="footer__one-cell">
+		<p class="footer__text"><a href = "#" class="footer-link">Правила</a></p>
+		<p class="footer__text"><a href = "#" class="footer-link">Условия</a></p>
+		<p class="footer__text"><a href = "#" class="footer-link">Реклама</a></p>
+	</div>
+	<div class="footer_two-cell">&copy; Auction 2018</div>
+</footer>	
+<div class='scroll-top'></div>
+<script src = "js/main.js"></script>
+<script src = "js/new-offer.js"></script>	
+</body>
+</html>

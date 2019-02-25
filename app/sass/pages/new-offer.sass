@@ -1,0 +1,91 @@
+.offer
+	&__body
+		margin-bottom: 10%
+	&-main-title
+	 	text-align: center
+	 	margin: 1.8rem 0 
+
+.offer-form
+	&__title
+	 	margin-right: 2.5rem
+	 	width: 16%
+	 	text-align: right
+	 	&:after
+	 		content: "*"
+	 		color: #ff0000
+	 		padding-left: 3px
+	&__row
+	 	display: flex
+	 	align-items: center
+	 	margin-bottom: 1rem
+	&__inner
+		display: block
+		width: 24rem
+		padding: 8px 0 8px 8px
+		border-radius: 8px
+		box-sizing: border-box
+		border: 1px solid #eaeaea
+		&:focus
+			outline: none
+		&:valid
+			border: 1px solid #65c000
+		&[placeholder]
+			+rfs(15px) 
+	&__img
+		cursor: pointer
+	&__submit
+		display: flex
+		width: 36rem
+		justify-content: flex-end
+
+.form-btn_size
+	width: 10rem
+
+.img-load__file
+	opacity: 0
+
+.img-load__btn
+	display: block
+	padding: 10px 12px
+	color: #fff
+	background: #ff0000
+	border-radius: 8px
+	+rfs(13px)
+	font-weight: bold
+	cursor: pointer
+
+
+.img-preview
+	display: flex
+	padding-left: 3.7rem
+	&__list
+		list-style: none
+		margin: 10px 0
+		padding: 0
+	&__item
+		display: block
+		margin-right: 1.8rem
+		position: relative
+	&__text
+		margin: 4px 0
+		width: 8.75rem
+	&__delete
+		position: relative
+		bottom: 7.5rem
+		font-weight: bold
+		+rfs(18px)
+		padding: 2px 6px
+		left: 4px
+		border-radius: 50%
+		background: #ff0000
+		color: #fff
+		cursor: pointer
+
+.preview-picture
+	height: 8rem
+	width: 8rem
+	background-size: auto
+	background-repeat: no-repeat
+	background-position: center center
+
+

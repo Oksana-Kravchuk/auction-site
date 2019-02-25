@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Интернет-аукцион</title>
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.min.css">
+</head>
+
+	
+<body class="page">
+	<div class="page__cart">
+		<div class="overlay-modal">
+			<div class="cart-popup">
+				<div class="cart-popup__wrapper">
+					<a href="#" class="cart-popup__close">
+						<img src="img/if_false-cross-reject-decline_2075833%20%281%29.svg" class="close-icon" alt="pop-up close">
+					</a>
+					<div class="cart-popup__header">
+						<p class="cart-popup-title">Корзина</p>
+					</div>
+					<div class="cart-popup__content"></div>
+					<div class="cart-popup__footer">
+						<div class="cart-total">
+							<p class="cart-total-title">Сума заказа:</p>
+							<div class="cart-total-sum"></div>
+						</div>
+					</div>
+					<div class="cart-popup__buttons">
+						<button class="btn-continue">Продолжить</button>
+						<button class="btn-payment">Оформить заказ</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header-top-cell">
+					<div class="header__contact">
+						<div class="header-phone">
+							<img src="img/phone.svg" alt="phone" class="header-phone__img">
+							<button class="header-phone__button" type="button">
+								<span class = "phone-number">(044) 787-77-00</span>
+							</button>
+						</div>
+						<ul class="header-nav__list">
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">Условия</a>
+							</li>
+							<li class="header-nav__item">
+								<a href="#" class="header-nav__link">О нас</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="header-nav__list">
+						<li class="header-nav__item">
+							<a href="signup.html" class="header-nav__link">Регистрация</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="new-offer.html" class="header-nav__link">Продать</a>
+						</li>
+						<li class="header-nav__item">
+							<a href="#" class="header-nav__link">Мои лоты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="header-bottom-cell">
+					<div class="nav-open">
+						<div class="nav-open__item"></div>
+						<div class="nav-open__item"></div>
+						<div class="nav-open__item"></div>
+					</div>
+					<div class="header-logo">
+						<a href="index.html" class="logo">
+							<img src="img/AUCTION.png" alt="logo" class="logo__picture">
+						</a>
+					</div>
+					<div class="search-form">
+						<input type="text" class="search-form__inner" placeholder="Я ищу...">
+						<div class="search-result"></div>
+						<button class="search-form__button" type="submit">Найти</button>
+					</div>
+					<div class="header-cart">
+						<a href="#" class="header-cart__link">
+							<img src="img/if_cart-alt_353403.svg" alt="cart" class = "header-cart__img">
+							<div class="count-goods"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page__row">
+		<div class="menu-wrapper">
+			<div class="container">
+				<nav class="main-menu">
+					<ul class="main-menu__list">
+						<li class="main-menu__item">
+							<a href="№" class="main-menu-link">Авто</a>
+							<div class="hidden-menu">
+								<ul class="hidden-menu__list">
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Атозапчасти</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Автоаксессуары</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Шины</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Диски</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Авторегистраторы</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Видеорегистраторы</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main-menu__item">
+							<a href="smartfony.html" class="main-menu-link">Телефоны</a>
+							<div class="hidden-menu">
+								<ul class="hidden-menu__list">
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Телефоны</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Аксессуары</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Комплектующие</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main-menu__item">
+							<a href="№" class="main-menu-link">Ноутбуки</a>
+							<div class="hidden-menu">
+								<ul class="hidden-menu__list">
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Ноутбуки</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Планшеты</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Комплектующие</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Приставки</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Оргтехника</a>
+									</li>
+									<li class="hidden-menu__item">
+										<a href="#" class="menu-link">Компьютеры</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="main-menu__item">
+							<a href="№" class="main-menu-link">Детский мир</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="№" class="main-menu-link">Спорт</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	
+<div class="page__row">
+	<div class="container">
+		<div class="breadcrumbs">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__item">
+					<a href="/" class="breadcrumbs-link">
+						<span class="breadcrumbs-text">Главная</span>
+					</a>
+				</li>
+				<li class="breadcrumbs__item">
+					<span class="breadcrumbs-text">Смартфоны и аксессуары</span>
+				</li>
+			</ul>
+		</div>
+		<main class="catalog">
+			<div class="catalog__header">
+				<h1 class="catalog-title">Смартфоны и аксессуары</h1>
+			</div>
+			<div class="catalog__body">
+				<div class="catalog-filter">
+					<div class="catalog-filter-wrapper">
+						<div class="filter-price">
+							<p class="catalog-filter__title">Текущая цена:
+							</p>
+							<div class="catalog-filter__block">
+								<input type="number" class="filter-price__min">
+								<span>&mdash;</span>
+								<input type="number" class="filter-price__max">
+								<button class="filter-price__btn" type="submit">ОК</button>
+							</div>
+						</div>
+						<div class="filter-condition">
+							<p class="catalog-filter__title">Состояние:</p>
+							<div class="catalog-filter__block">
+								<ul class="filter-list">
+									<li class="filter__item">
+										<label>
+											<input type="checkbox" class="filter-condition-new filter-checkbox" name="filter-condition-1" value="new">
+											<span class="filter-custom-checkbox"></span>
+											<span class="filter-label">Новый</span>
+										</label>
+									</li>
+									<li class="filter__item">
+										<label>
+											<input type="checkbox" class="filter-condition-notNew filter-checkbox" name="filter-condition-2" value="notNew">
+											<span class="filter-custom-checkbox"></span>
+											<span class="filter-label">Б/У</span>
+										</label></li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter-repair">
+							<p class="catalog-filter__title">Техническое состояние:</p>
+							<div class="catalog-filter__block">
+								<ul class="filter-list">
+									<li class="filter__item">
+										<label>
+											<input type="checkbox" class="filter-repair-ok filter-checkbox" name="filter-repair-1" value="ok">
+											<span class="filter-custom-checkbox"></span>
+											<span class="filter-label">Исправное</span>
+										</label>
+									</li>
+									<li class="filter__item">
+										<label>
+											<input type="checkbox" class="filter-repair-faulty filter-checkbox" name="filter-repair-2" value="faulty">
+											<span class="filter-custom-checkbox"></span>
+											<span class="filter-label">Неисправное</span>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="filter-diagonal">
+							<p class="catalog-filter__title">Диагональ экана:</p>
+							<div class="catalog-filter__block">
+								<ul class="filter-list">
+									<li class="filter__item">
+										<label>
+											<input type="checkbox" class="filter-diagonal-wide filter-checkbox" name="filter-diagonal-1" value=">6">
+											<span class="filter-custom-checkbox"></span>
+											<span class="filter-label">более 6"</span>
+										</label>
+									</li>
+									<li class="filter__item">
+										<label>
+											<input type="checkbox" class="filter-diagonal-middle filter-checkbox" name="filter-diagonal-2" value="5-6">
+											<span class="filter-custom-checkbox"></span>
+											<span class="filter-label">5" - 6"</span>
+										</label>
+									</li>
+									<li class="filter__item">
+										<label><input type="checkbox" class="filter-diagonal-small filter-checkbox" name="filter-diagonal-3" value="<3">
+										<span class="filter-custom-checkbox"></span>
+										<span class="filter-label">до 3"</span>
+									</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-content-block">
+					<div class="catalog-sort">
+						<div class="catalog-sort__title">Сортировка:</div>
+						<select name="sort" class="catalog-sort__list">
+							<option value="price-desc">от дешевых к дорогим</option>
+							<option value="price-asc">от дорогих к дешевым</option>
+							<option value="recommend" selected>рекомендации</option>
+						</select>
+					</div>
+					<div class="catalog-products">
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div class="bid-block">
+		<div class="overlay-modal overlay-modal_bid">
+			<div class="bid-popup">
+				<div class="bid-popup__wrapper">
+					<a href="#" class="bid-popup__close">
+						<img src="img/if_false-cross-reject-decline_2075833%20%281%29.svg" class="close-icon" alt="pop-up close">
+					</a>
+					<div class="bid-popup__title">Сделать ставку</div>
+					<div class="bid-popup__content"></div>
+					<div class="bid-popup__buttons">
+						<button class="btn-continue btn-continue_size">Продолжить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="footer__one-cell">
+		<p class="footer__text"><a href = "#" class="footer-link">Правила</a></p>
+		<p class="footer__text"><a href = "#" class="footer-link">Условия</a></p>
+		<p class="footer__text"><a href = "#" class="footer-link">Реклама</a></p>
+	</div>
+	<div class="footer_two-cell">&copy; Auction 2018</div>
+</footer>	
+<div class='scroll-top'></div>
+<script src = "js/main.js"></script>
+<script src = "js/category.js"></script>
+</body>
+</html>
